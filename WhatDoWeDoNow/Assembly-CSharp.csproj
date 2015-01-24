@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
+     <Compile Include="Assets\Scripts\ControlCamera.cs" />
      <Compile Include="Assets\Scripts\ControlCheckPoint.cs" />
      <Compile Include="Assets\Scripts\ControlNivel.cs" />
      <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />

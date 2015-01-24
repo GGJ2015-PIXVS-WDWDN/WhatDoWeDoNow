@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{7C6F4E94-4691-0460-EEBA-B85286C092DD}</ProjectGuid>
+	<ProjectGuid>{EDD3452E-2953-AB37-3ED1-B8F55048FF00}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,14 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AspectUtility.cs" />
-     <Compile Include="Assets\Scripts\Button.cs" />
-     <Compile Include="Assets\Scripts\ControlCamera.cs" />
-     <Compile Include="Assets\Scripts\ControlCheckPoint.cs" />
-     <Compile Include="Assets\Scripts\ControlNivel.cs" />
-     <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />
-     <Compile Include="Assets\Scripts\InicioGUI.cs" />
-     <Compile Include="Assets\Scripts\NotificationCenter.cs" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
