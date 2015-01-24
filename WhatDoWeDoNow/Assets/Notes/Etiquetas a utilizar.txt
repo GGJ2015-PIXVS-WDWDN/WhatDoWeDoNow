@@ -1,0 +1,15 @@
+Etiquetas a utilizar:
+
+	Héroes:
+		- PersonajePapa -> Player
+
+	Villanos:
+
+	Obstáculos
+
+	Posicionadores:
+		- StartPoint: StartPoint
+		- EndPoint: EndPoint
+		- ZonaCopas: ZonaCopas
+		- InicioCopas: InicioCopas
+		- FinCopas: FinCopas

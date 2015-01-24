@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\ControlNivel.cs" />
      <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />
      <Compile Include="Assets\Scripts\InicioGUI.cs" />
+     <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
