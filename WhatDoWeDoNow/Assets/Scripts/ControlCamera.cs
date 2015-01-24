@@ -25,7 +25,7 @@ public class ControlCamera : MonoBehaviour {
 	{
 		if(Input.GetKey(KeyCode.RightArrow))
 		{
-			this.transform.Translate(- Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
+			this.transform.Translate(Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
 			//this.transform.Translate((Velociad*2.0f)*Time.deltaTime,0f,0f,Space.World);
 			//transform.Translate(Vector3.left * Velocidad * Time.deltaTime, Space.World);
 			Debug.Log ("Muevo camara");
@@ -33,7 +33,7 @@ public class ControlCamera : MonoBehaviour {
 
 		if(Input.GetKey(KeyCode.LeftArrow))
 		{
-			this.transform.Translate( Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
+			this.transform.Translate(-Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
 			//this.transform.Translate((Velociad*2.0f)*Time.deltaTime,0f,0f,Space.World);
 			//transform.Translate(Vector3.left * Velocidad * Time.deltaTime, Space.World);
 			Debug.Log ("Muevo camara");
