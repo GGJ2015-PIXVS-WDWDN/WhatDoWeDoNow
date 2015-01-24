@@ -18,7 +18,7 @@ public class ControlNivel : MonoBehaviour {
 
 	public void PosicionarJugador()
 	{
-		Instantiate(Player, PosicionInicial.transform.position, Quaternion.identity);
+		Player.transform.position = new Vector3(PosicionInicial.transform.position.x, PosicionInicial.transform.position.y, PosicionInicial.transform.position.z);
 	}
 
 }

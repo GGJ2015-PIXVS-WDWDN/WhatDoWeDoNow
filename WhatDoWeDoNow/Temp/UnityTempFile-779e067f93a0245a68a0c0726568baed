@@ -39,10 +39,12 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/Scripts/AspectUtility.cs'
 'Assets/Scripts/Button.cs'
 'Assets/Scripts/ControlCheckPoint.cs'
 'Assets/Scripts/ControlNivel.cs'
 'Assets/Scripts/ControladorPersonaje.cs'
 'Assets/Scripts/InicioGUI.cs'
+'Assets/Scripts/NotificationCenter.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

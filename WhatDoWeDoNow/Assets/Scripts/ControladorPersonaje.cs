@@ -16,6 +16,8 @@ public class ControladorPersonaje : MonoBehaviour {
 
 	private Animator animator;
 
+	public GameObject InicioEscena;
+	public GameObject FinEscena;
 
 	void Awake (){
 		animator = GetComponent<Animator>();
@@ -38,6 +40,35 @@ public class ControladorPersonaje : MonoBehaviour {
 		caminando = false;
 		saltando = false;
 		corriendo = false;
+
+	}
+
+	void LateUpdate()
+	{
+		Carril();
+	}
+
+	//Función para evitar que pase de la escena
+	void Carril()
+	{
+
+		if(transform.position.x > InicioEscena.transform.position.x)
+		{
+			transform.position = new Vector3(InicioEscena.transform.position.x,
+			                                 transform.position.y, 
+			                                 transform.position.z);
+
+			Debug.Log("Carril: ando aqui");
+		}
+
+		if(transform.position.x < FinEscena.transform.position.x)
+		{
+			transform.position = new Vector3(FinEscena.transform.position.x,
+			                                 transform.position.y, 
+			                                 transform.position.z);
+			
+			Debug.Log("Carril: ando aqui");
+		}
 
 	}
 
