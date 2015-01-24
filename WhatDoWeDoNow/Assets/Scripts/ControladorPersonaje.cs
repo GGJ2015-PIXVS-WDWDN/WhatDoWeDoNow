@@ -28,6 +28,7 @@ public class ControladorPersonaje : MonoBehaviour {
 	void Start () 
 	{
 		PosicionarJugador();
+	
 	}
 
 	//Ubicar al jugador
@@ -84,6 +85,7 @@ public class ControladorPersonaje : MonoBehaviour {
 	}
 
 	void Update () {
+
 
 		if(Input.GetKey(KeyCode.RightArrow))
 		{

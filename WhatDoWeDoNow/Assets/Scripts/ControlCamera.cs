@@ -5,11 +5,19 @@ public class ControlCamera : MonoBehaviour {
 
 	public GameObject posicionJugador;
 	public float Velocidad;
+	public GameObject jugador;
+
+	private float distancia;
+	private float catOpuesto;
+
 
 	// Use this for initialization
 	void Start () 
 	{
 		PosicionarCamara();
+
+		this.distancia = this.transform.position.z - posicionJugador.transform.position.z;
+		this.catOpuesto = Mathf.Abs(distancia * Mathf.Sin(camera.fieldOfView / 2.0f));
 
 	}
 
@@ -64,9 +72,34 @@ public class ControlCamera : MonoBehaviour {
 		
 	}
 
+	public void RecolocaCamara(float distance)
+	{
+		float posicionActual = this.transform.position.x;
+		float xIzquierda = posicionActual - this.catOpuesto - 20.0f;
+		float xDerecha = posicionActual + this.catOpuesto + 20.0f;
+
+	
+		if(jugador.transform.position.x > xIzquierda)
+		{
+			Debug.Log("Salio izquierda");
+			
+		}
+
+		if(jugador.transform.position.x < xDerecha)
+		{
+			Debug.Log("Salio xDerecha");
+			
+		}
+
+		Debug.Log("Salto");
+
+
+	}
+
 	void LateUpdate()
 	{
 		Carril();
+		RecolocaCamara(distancia);
 	}
 
 }
