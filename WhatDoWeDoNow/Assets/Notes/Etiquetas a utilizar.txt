@@ -5,7 +5,12 @@ Etiquetas a utilizar:
 
 	Villanos:
 
-	Obstáculos
+	Obstáculos:
+		- Cacerola1: Cacerola1
+		- Cacerola2: Cacerola2
+		- Vaso: Vaso
+		- Copa: Copa
+		
 
 	Posicionadores:
 		- StartPoint: StartPoint
