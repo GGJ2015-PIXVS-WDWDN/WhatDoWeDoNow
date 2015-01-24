@@ -1,6 +1,6 @@
 Nombre del juego: What do we do now?
 
-Héroe: Papa (PersonajePapa)
+Héroe: Papa (PersonajePapa) 
 	Arma principal: Bolsita de catsup
 	Acciones: 
 		- Caminar (Flecha derecha e izquierda)
@@ -22,3 +22,13 @@ Cosas a esquivar:
 	- Vasos
 	- Cacerolas
 	- Charcos
+
+Primer nivel:
+	Héroe: Papa
+	Enemigos: 
+		- Cucaracha
+		- Plato
+		- Cuchillo
+	Obstáculos:
+		- Copas
+		- Cacerolas
