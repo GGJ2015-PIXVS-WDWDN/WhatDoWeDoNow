@@ -55,6 +55,13 @@
      <Compile Include="Assets\Scripts\InicioGUI.cs" />
      <Compile Include="Assets\Scripts\NotificationCenter.cs" />
      <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Applications/Repositorios/WhatDoWeDoNow/WhatDoWeDoNow/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{EDD3452E-2953-AB37-3ED1-B8F55048FF00}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

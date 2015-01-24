@@ -6,19 +6,14 @@ public class ControlCamera : MonoBehaviour {
 	public GameObject posicionJugador;
 	public float Velocidad;
 	public GameObject jugador;
-
-	private float distancia;
-	private float catOpuesto;
-
-
+	public float distanciaCamara;
+	private float division;
+		
 	// Use this for initialization
 	void Start () 
 	{
+		this.division = distanciaCamara / 2.0f;
 		PosicionarCamara();
-
-		this.distancia = this.transform.position.z - posicionJugador.transform.position.z;
-		this.catOpuesto = Mathf.Abs(distancia * Mathf.Sin(camera.fieldOfView / 2.0f));
-
 	}
 
 	public void PosicionarCamara()
@@ -26,6 +21,8 @@ public class ControlCamera : MonoBehaviour {
 		transform.position = new Vector3(posicionJugador.transform.position.x,
 		                                transform.position.y,
 		                                transform.position.z);
+
+
 	}
 	
 	// Update is called once per frame
@@ -34,6 +31,7 @@ public class ControlCamera : MonoBehaviour {
 		if(Input.GetKey(KeyCode.RightArrow))
 		{
 			this.transform.Translate(Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
+
 			//this.transform.Translate((Velociad*2.0f)*Time.deltaTime,0f,0f,Space.World);
 			//transform.Translate(Vector3.left * Velocidad * Time.deltaTime, Space.World);
 			Debug.Log ("Muevo camara");
@@ -42,6 +40,7 @@ public class ControlCamera : MonoBehaviour {
 		if(Input.GetKey(KeyCode.LeftArrow))
 		{
 			this.transform.Translate(-Velocidad * Time.deltaTime, 0.0f, 0.0f, Space.World);
+
 			//this.transform.Translate((Velociad*2.0f)*Time.deltaTime,0f,0f,Space.World);
 			//transform.Translate(Vector3.left * Velocidad * Time.deltaTime, Space.World);
 			Debug.Log ("Muevo camara");
@@ -59,6 +58,8 @@ public class ControlCamera : MonoBehaviour {
 			transform.position = new Vector3(InicioEscena.transform.position.x,
 			                                 transform.position.y, 
 			                                 transform.position.z);
+
+
 			
 		}
 		
@@ -67,31 +68,9 @@ public class ControlCamera : MonoBehaviour {
 			transform.position = new Vector3(FinEscena.transform.position.x,
 			                                 transform.position.y, 
 			                                 transform.position.z);
-			
+
+
 		}
-		
-	}
-
-	public void RecolocaCamara(float distance)
-	{
-		float posicionActual = this.transform.position.x;
-		float xIzquierda = posicionActual - this.catOpuesto - 20.0f;
-		float xDerecha = posicionActual + this.catOpuesto + 20.0f;
-
-	
-		if(jugador.transform.position.x > xIzquierda)
-		{
-			Debug.Log("Salio izquierda");
-			
-		}
-
-		if(jugador.transform.position.x < xDerecha)
-		{
-			Debug.Log("Salio xDerecha");
-			
-		}
-
-		Debug.Log("Salto");
 
 
 	}
@@ -99,7 +78,7 @@ public class ControlCamera : MonoBehaviour {
 	void LateUpdate()
 	{
 		Carril();
-		RecolocaCamara(distancia);
+
 	}
 
 }
