@@ -14,9 +14,9 @@ Enemigos:
 	- Cuchillo (1/4)
 	- Tenedor (1/6)
 	- Cuchara (1/8)
-	- Plato (1/16)
 	- Cucaracha (1/)
-
+	- Plato (1/16)
+	
 Cosas a esquivar: 
 	- Copas
 	- Vasos

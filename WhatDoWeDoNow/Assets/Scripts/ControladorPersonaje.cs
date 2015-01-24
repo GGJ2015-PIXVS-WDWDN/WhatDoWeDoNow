@@ -12,21 +12,36 @@ public class ControladorPersonaje : MonoBehaviour {
 	private bool volteaDer = true;
 	public float velociad = 3f;
 	private Vector3 posicion;
-
-
+	
 	private Animator animator;
 
 	public GameObject InicioEscena;
 	public GameObject FinEscena;
 
-	void Awake (){
+
+	void Awake ()
+	{
 		animator = GetComponent<Animator>();
-	
 	}
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		PosicionarJugador();
+	}
+
+	//Ubicar al jugador
+	public GameObject posicionJugador;
+
+	void PosicionarJugador()
+	{
+
+		float altura;
+		altura = posicionJugador.transform.position.y + (transform.localScale.y / 2.0f) + 1.2f;
+
+		transform.position = new Vector3(posicionJugador.transform.position.x,
+		                                 altura,
+		                                 posicionJugador.transform.position.z);
 	}
 
 	void FixedUpdate(){
@@ -34,8 +49,6 @@ public class ControladorPersonaje : MonoBehaviour {
 		animator.SetBool ("KeyWalk", caminando);
 		animator.SetBool ("KeyJump", saltando);
 		animator.SetBool("KeyRun",corriendo);
-
-		
 
 		caminando = false;
 		saltando = false;
@@ -58,7 +71,6 @@ public class ControladorPersonaje : MonoBehaviour {
 			                                 transform.position.y, 
 			                                 transform.position.z);
 
-			Debug.Log("Carril: ando aqui");
 		}
 
 		if(transform.position.x < FinEscena.transform.position.x)
@@ -66,8 +78,7 @@ public class ControladorPersonaje : MonoBehaviour {
 			transform.position = new Vector3(FinEscena.transform.position.x,
 			                                 transform.position.y, 
 			                                 transform.position.z);
-			
-			Debug.Log("Carril: ando aqui");
+
 		}
 
 	}
