@@ -63,7 +63,7 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/VegenIsennawa/Documents/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Applications/Repositorios/WhatDoWeDoNow/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
