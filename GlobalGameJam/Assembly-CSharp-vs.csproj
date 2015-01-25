@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GUI\Extra GUI Skins\SkinTest.cs" />
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\ControlCheckPoint.cs" />
@@ -64,7 +65,7 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/VegenIsennawa/Documents/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/VegenIsennawa/Desktop/Correcciones/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
