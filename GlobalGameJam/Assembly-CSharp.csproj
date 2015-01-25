@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\ControlNivel.cs" />
      <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />
      <Compile Include="Assets\Scripts\Destructor.cs" />
+     <Compile Include="Assets\Scripts\GUILabel.cs" />
      <Compile Include="Assets\Scripts\Generador.cs" />
      <Compile Include="Assets\Scripts\IA_Gato.cs" />
      <Compile Include="Assets\Scripts\InicioGUI.cs" />

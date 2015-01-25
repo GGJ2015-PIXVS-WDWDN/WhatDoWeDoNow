@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\ControlNivel.cs" />
      <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />
      <Compile Include="Assets\Scripts\Destructor.cs" />
+     <Compile Include="Assets\Scripts\GUILabel.cs" />
      <Compile Include="Assets\Scripts\Generador.cs" />
      <Compile Include="Assets\Scripts\IA_Gato.cs" />
      <Compile Include="Assets\Scripts\InicioGUI.cs" />
@@ -63,7 +64,7 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Notes\Etiquetas a utilizar.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Applications/Repositorios/WhatDoWeDoNow/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/VegenIsennawa/Documents/GlobalGameJam/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

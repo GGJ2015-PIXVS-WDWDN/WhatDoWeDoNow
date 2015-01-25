@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InicioGUI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GUILabel.cs">
     <Files>
-      <File FileName="Assets/Scripts/InicioGUI.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/GUILabel.cs" Line="29" Column="75" />
+      <File FileName="Assets/Scripts/InicioGUI.cs" Line="4" Column="20" />
+      <File FileName="Assets/Scripts/Button.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
